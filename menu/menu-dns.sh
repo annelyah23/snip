@@ -87,7 +87,7 @@ menu-dns
 }
 
 function check-dns(){
-    bash <(curl -sSL https://raw.githubusercontent.com/arismaramar/multi/main/menu/ceknet.sh)
+    bash <(curl -sSL https://raw.githubusercontent.com/annelyah23/snip/main/menu/ceknet.sh)
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
 }
