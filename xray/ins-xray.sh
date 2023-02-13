@@ -140,6 +140,7 @@ echo -n '#!/bin/bash
 /etc/init.d/nginx stop
 "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" &> /root/renew_ssl.log
 /etc/init.d/nginx start
+/etc/init.d/nginx status
 ' > /usr/local/bin/ssl_renew.sh
 chmod +x /usr/local/bin/ssl_renew.sh
 if ! grep -q 'ssl_renew.sh' /var/spool/cron/crontabs/root;then (crontab -l;echo "15 03 */3 * * /usr/local/bin/ssl_renew.sh") | crontab;fi
@@ -584,7 +585,7 @@ sed -i '$ i     }' /etc/nginx/conf.d/xray.conf
 
 sleep 1
 echo -e "[ ${green}INFO$NC ] Installing bbr.."
-wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/arismaramar/multi/main/ssh/bbr.sh"
+wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/annelyah23/snip/main/ssh/bbr.sh"
 chmod +x /usr/bin/bbr
 bbr >/dev/null 2>&1
 rm /usr/bin/bbr >/dev/null 2>&1
