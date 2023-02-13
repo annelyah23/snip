@@ -84,7 +84,7 @@ echo -e ""
 echo -e "[ ${green}INFO${NC} ] Start " 
 sleep 0.5
 systemctl stop nginx
-domain=$(cat /var/lib/alexxa-pro/ipvps.conf | cut -d'=' -f2)
+domain=$(cat /var/lib/anggun-pro/ipvps.conf | cut -d'=' -f2)
 Cek=$(lsof -i:80 | cut -d' ' -f1 | awk 'NR==2 {print $1}')
 if [[ ! -z "$Cek" ]]; then
 sleep 1
