@@ -15,10 +15,10 @@ rm /usr/bin/menu-bot
 
 sleep 2
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Downloading New Script"
-wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/arismaramar/multi/main/menu/menu-bot.sh" && chmod +x /usr/bin/menu-bot
+wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/annelyah23/snip/main/menu/menu-bot.sh" && chmod +x /usr/bin/menu-bot
 
 sleep 2
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Download Changelog File"
-wget -q -O /root/changelog.txt "https://raw.githubusercontent.com/arismaramar/multi/main/plugins/changelog.txt" && chmod +x /root/changelog.txt
+wget -q -O /root/changelog.txt "https://raw.githubusercontent.com/annelyah23/snip/main/plugins/changelog.txt" && chmod +x /root/changelog.txt
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Read Changelog? ./root/changelog.txt"
 sleep 2
