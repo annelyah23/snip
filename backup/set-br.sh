@@ -1,9 +1,9 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="bakulssh"
+GitUser="annelyah23"
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/${GitUser}/multi/main/backup/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/${GitUser}/snip/main/backup/rclone.conf"
 git clone https://github.com/magnific0/wondershaper.git
 cd wondershaper
 make install
@@ -28,9 +28,9 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O backup "https://raw.githubusercontent.com/${GitUser}multi/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/${GitUser}multi/main/backup/restore.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/${GitUser}multi/main/backup/limit-speed.sh"
+wget -O backup "https://raw.githubusercontent.com/${GitUser}snip/main/backup/backup.sh"
+wget -O restore "https://raw.githubusercontent.com/${GitUser}snip/main/backup/restore.sh"
+wget -O limit-speed "https://raw.githubusercontent.com/${GitUser}snip/main/backup/limit-speed.sh"
 
 chmod +x backup
 chmod +x restore
