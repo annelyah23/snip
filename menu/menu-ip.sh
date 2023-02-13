@@ -473,7 +473,7 @@ echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ip  
 }
-Isadmin=$(curl -sS https://raw.githubusercontent.com/arismaramar/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/annelyah23/permission/main/ipmini | grep $MYIP | awk '{print $5}')
 if [ "$Isadmin" = "OFF" ]; then
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
