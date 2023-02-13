@@ -1,17 +1,17 @@
 #!/bin/bash
 clear
 cd
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/arismaramar/multi/main/websocket/dropbear-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/arismaramar/multi/main/websocket/ws-stunnel
-wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/arismaramar/multi/main/openvpn/ws-ovpn.py
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/annelyah23/snip/main/websocket/dropbear-ws.py
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/annelyah23/snip/main/websocket/ws-stunnel
+wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/annelyah23/snip/main/openvpn/ws-ovpn.py
 
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 chmod +x /usr/local/bin/ws-ovpn
 
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/arismaramar/multi/main/websocket/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/arismaramar/multi/main/websocket/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
-wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/arismaramar/multi/main/openvpn/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/annelyah23/snip/main/websocket/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/annelyah23/snip/main/websocket/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/annelyah23/snip/main/openvpn/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
 
 systemctl daemon-reload
 systemctl enable ws-dropbear.service
