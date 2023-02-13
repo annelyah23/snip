@@ -11,13 +11,13 @@ source /etc/os-release
 ver=$VERSION_ID
 
 #detail nama perusahaan
-country=ID
-state=INDONESIA
-locality=JAWATENGAH
-organization=Blogger
-organizationalunit=Blogger
+country=MY
+state=Malaysia
+locality=Sabahan
+organization=btGroup
+organizationalunit=Anggur
 commonname=none
-email=admin@sedang.my.id
+email=kingthor87@gmail.com
 
 # simple password minimal
 curl -sS https://raw.githubusercontent.com/annelyah23/snip/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
@@ -148,7 +148,7 @@ mkdir /home/vps/public_html/ss-ws
 mkdir /home/vps/public_html/clash-ws
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/annelyah23/multi/main/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/annelyah23/snip/main/ssh/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
