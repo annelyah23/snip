@@ -79,7 +79,7 @@ cat log-install.txt
 echo -e ""
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                ${WH}•   ANGGUN @ 2023 •${NC}                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                ${WH}•   JsPhantom @ 2023 •${NC}                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -n 1 -s -r -p "  Press any key to back on menu"
