@@ -7,7 +7,7 @@
 
 ### Update & upgrade first your VPS
 ```html
-apt update && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
+apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
 ```
 ### Installation scripts
 ```
