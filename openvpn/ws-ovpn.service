@@ -1,5 +1,5 @@
 [Unit]
-Description=Websocket-SSH By anggun
+Description=Websocket-SSH By JsPhantom
 Documentation=https://remoot.my.id
 After=network.target nss-lookup.target
 

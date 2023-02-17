@@ -257,7 +257,7 @@ if [ -z $user ]; then
 echo -e "$COLOR1 ${NC}   [Error] Username cannot be empty "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                ${WH}• ANGGUN @ 2023 •${NC}                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                ${WH}• JsPhantom @ 2023 •${NC}                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -291,7 +291,7 @@ sed -i '/#trojangrpc$/a\#! '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 systemctl restart xray
 
-trojanlink="trojan://${uuid}@$api.dmvpn.me:${tr}?path=%anggun-tr&security=tls&host=bug.com&type=ws&sni=${domain}#${user}"
+trojanlink="trojan://${uuid}@$api.dmvpn.me:${tr}?path=%JsPhantom-tr&security=tls&host=bug.com&type=ws&sni=${domain}#${user}"
 
 trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=teams.live.com#${user}"
 
