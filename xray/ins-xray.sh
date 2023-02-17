@@ -143,7 +143,7 @@ clear;
 # nginx renew ssl
 echo -n '#!/bin/bash
 /etc/init.d/nginx stop
-"/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" &> /root/renew_ssl.log
+"/root/.acme.sh/acme.sh --cron --home /root/.acme.sh/acme.sh &> /root/renew_ssl.log
 /etc/init.d/nginx start
 /etc/init.d/nginx status
 ' > /usr/local/bin/ssl_renew.sh
@@ -188,7 +188,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/anggun-vless"
+                "path": "/JsPhantom-vless"
           }
         }
      },
@@ -208,7 +208,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/anggun-vmess"
+                "path": "/JsPhantom-vmess"
           }
         }
      },
@@ -229,7 +229,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
            "network": "ws",
            "wsSettings": {
-               "path": "/anggun-tr"
+               "path": "/JsPhantom-tr"
             }
          }
      },
@@ -250,7 +250,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
           "network": "ws",
              "wsSettings": {
-               "path": "/anggun-ss"
+               "path": "/JsPhantom-ss"
            }
         }
      },
