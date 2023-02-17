@@ -132,7 +132,7 @@ curl https://acme-install.netlify.app/acme.sh -O /root/acme.sh
 chmod +x /root/acme.sh
 /root/acme.sh --upgrade --auto-upgrade
 /root/acme.sh --set-default-ca --server letsencrypt
-/root/acme.sh --issue -d $domain --standalone -k ec-256 --listen-v6
+/root/acme.sh --issue -d $domain --standalone -k ec-256
 ~/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
 chmod 755 /usr/local/etc/xray/xray.key;
 service squid start
