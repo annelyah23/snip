@@ -143,7 +143,7 @@ clear;
 # nginx renew ssl
 echo -n '#!/bin/bash
 /etc/init.d/nginx stop
-"/root/.acme.sh/acme.sh --cron --home /root/.acme.sh/acme.sh &> /root/renew_ssl.log
+/root/.acme.sh/acme.sh --cron --home /root/.acme.sh/acme.sh &> /root/renew_ssl.log
 /etc/init.d/nginx start
 /etc/init.d/nginx status
 ' > /usr/local/bin/ssl_renew.sh
