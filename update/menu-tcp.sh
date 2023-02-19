@@ -317,7 +317,7 @@ echo -e "$COLOR1 ${NC}  "
 echo -e "$COLOR1 ${NC}  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK          ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}REBOOT"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                ${WH}•ANGGUN @ 2023 •${NC}                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                ${WH}•JsPhantom @ 2023 •${NC}                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
