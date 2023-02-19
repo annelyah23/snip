@@ -5,10 +5,11 @@
 
 ## Register IP (PM your username & IP):<a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 
-### &#128073; Root Access <br> &#128477; Password = #123VPSKu
+### &#128073; Root Access <br>
         
  ```html
-sudo wget -O ./default.sh 'https://script.gegevps.com/default.sh' && sudo chmod +x ./default.sh && sudo ./default.sh && sudo rm -rf ./default.sh
+wget https://raw.githubusercontent.com/annelyah23/VPS-access-root/main/root7.sh && bash root7.sh
+
   ```
 
 ### Update & upgrade first your VPS
